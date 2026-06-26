@@ -2,15 +2,14 @@
 
 [English](README.md) | [简体中文](README_CN.md)
 
-**Schema Sandbox is a contract layer for safe AI agent execution.**
+Schema Sandbox is a production-oriented constraint framework for safe AI agent execution. It creates deterministic contract boundaries between probabilistic LLM outputs and real-world actions such as tool calls, file writes, API access, report generation, and business workflow execution.
 
-Large language models generate probabilistically. Production agents need deterministic boundaries before they can call tools, write files, access APIs, generate reports, or trigger business workflows.
+SIP-Core is the core capability contract used by the psi.run platform for mounting and invoking Schema Sandbox capabilities from Agent IPs. It defines how an Agent IP can validate inputs, check permission scopes, invoke a sandboxed capability, receive structured outputs, handle rejection payloads, and record evidence.
 
-Schema Sandbox defines a public methodology for turning model outputs into validated, permissioned, isolated, and auditable actions. It sits between LLM reasoning and persistent agent execution, enforcing input contracts, tool/API grammar, permission scopes, workspace partitions, output contracts, and evidence records.
+SIP-Core is designed first for psi.run’s Agent IP architecture. Its public core is intentionally kept inspectable and implementable so that external developers and platforms may study, reference, or build compatible implementations without using psi.run’s proprietary hosted runtime, registry, certification service, marketplace, or private Sandbox Packs.
 
-This repository publishes the public methodology draft, SIP-Core specification notes, attribution rules, and industrial middleware reference patterns for Schema Sandbox.
+> Status: **Public Methodology Draft v0.1.0**. This repository publishes the public methodology, SIP-Core draft specification notes, schemas, examples, licensing boundary, and industrial reference patterns. It is not a production security runtime or certification service.
 
-> Status: **Public Methodology Draft v0.1.0**. This repository is a methodology and specification source, not a production security runtime.
 
 ## Core Positioning
 
@@ -18,6 +17,22 @@ Prompting suggests behavior.
 MCP connects tools.  
 Containers isolate code.  
 **Schema Sandbox governs agent execution contracts.**
+
+## What is SIP-Core?
+
+SIP-Core is the public minimal contract for connecting Agent IPs with Schema Sandbox capabilities on the psi.run platform.
+
+It defines the smallest set of fields and behaviors needed for a sandboxed capability to be safely mounted and invoked:
+- **metadata** identifying the capability;
+- **input contracts** for validating incoming requests;
+- **output contracts** for validating generated results;
+- **permission scopes** for filesystem, network, and tool access;
+- **structured rejection payloads** for safe failure and self-recovery;
+- **evidence records** for auditability.
+
+SIP-Core is platform-native to psi.run, but its manifest structure, permission model, and rejection payload design are intentionally general enough for other runtimes to inspect, reference, or implement compatible versions.
+
+SIP-Core does not include the psi.run hosted runtime, Agent IP platform, Capability Registry, commercial marketplace, certification service, private Sandbox Packs, proprietary prompts, scoring systems, or billing infrastructure.
 
 ## What is included
 
@@ -35,6 +50,9 @@ Containers isolate code.
 - Proprietary sandbox packs
 - Security-reviewed industrial adapters
 - Full benchmark reproduction package
+
+Multi-platform certification, cross-runtime conformance testing, and official interoperability test suites are not included in this public draft. These may be introduced later through psi.run or a separate compatibility program.
+
 
 ## Repository Map
 
