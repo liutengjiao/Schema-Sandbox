@@ -157,7 +157,7 @@ header {
 
 .nav-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   list-style: none;
   align-items: center;
 }
@@ -168,6 +168,7 @@ header {
   font-size: 0.95rem;
   font-weight: 500;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -1002,11 +1003,13 @@ html[lang="cn"] .lang-en {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--card-border);
   padding: 0.25rem 0.5rem;
   border-radius: 9999px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .lang-btn {
   background: none;
