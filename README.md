@@ -1,5 +1,7 @@
 # Schema Sandbox
 
+[English](README.md) | [简体中文](README_CN.md)
+
 **Schema Sandbox is a contract layer for safe AI agent execution.**
 
 Large language models generate probabilistically. Production agents need deterministic boundaries before they can call tools, write files, access APIs, generate reports, or trigger business workflows.
