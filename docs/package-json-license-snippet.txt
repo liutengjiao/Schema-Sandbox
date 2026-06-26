@@ -1,0 +1,11 @@
+For npm packages that contain only code/schemas/examples licensed as Apache-2.0:
+
+{
+  "license": "Apache-2.0"
+}
+
+For a monorepo root that contains both specification text and code, prefer:
+
+{
+  "license": "SEE LICENSE IN LICENSE.md"
+}

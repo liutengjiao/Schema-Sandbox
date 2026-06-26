@@ -98,13 +98,15 @@ Schema Sandbox 可能会拦截并返回：
 
 详见 [`examples/industrial-maintenance-workorder`](examples/industrial-maintenance-workorder/) 和 [`industrial/maintenance-workorder-gateway.md`](industrial/maintenance-workorder-gateway.md)。
 
-## 开源许可证
+## 许可证与商业边界
 
-方法论文本、图表、文档和公开规范草案采用 **Creative Commons Attribution 4.0 International (CC BY 4.0)** 许可。参见 [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md)。
+本仓库采用分层开源许可与商业保留模式。
 
-示例代码、JSON Schema 和实现代码片段采用 **Apache License 2.0** 许可。参见 [`LICENSE-CODE.md`](LICENSE-CODE.md)。
+- **SIP-Core 规范与文档** 采用 Creative Commons Attribution 4.0 International (**CC BY 4.0**) 许可。参见 [`LICENSE-SPEC.md`](LICENSE-SPEC.md)。
+- **源代码、JSON Schema、验证器、SDK、示例和测试代码** 采用 **Apache License 2.0** 许可。参见 [`LICENSE-CODE.md`](LICENSE-CODE.md)。
+- **psi.run 托管运行时、Agent IP 平台与身份运行时、能力注册表（Registry）、商业市场、私有沙箱包（Sandbox Packs）、专有 Prompt 链、评分系统、计费系统、托管 API、商标、标识和认证标签** 均不属于公开许可范围，除非另行书面声明。参见 [`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md)、[`TRADEMARK.md`](TRADEMARK.md) 和 [`CONFORMANCE.md`](CONFORMANCE.md)。
 
-未经单独书面许可，不得将 Schema Sandbox、SchemaSandbox、SIP 及相关标识作为产品名称、服务名称、认证标志或混淆性商业标志使用。参见 [`TRADEMARK.md`](TRADEMARK.md)。
+SIP-Core 作为将 Schema Sandbox 能力挂载到 Agent IP 上的公共极简接口合约发布。公开许可证允许开发者进行审查、独立实现和开发兼容工具，但不授予使用 psi.run 托管平台或声称获得官方认证、背书或商业市场上架的权利。
 
 ## 推荐署名方式
 

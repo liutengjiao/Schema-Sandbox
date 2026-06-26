@@ -1,21 +1,66 @@
 # Trademark and Naming Policy
 
-Schema Sandbox, SchemaSandbox, SIP, and associated names, marks, logos, certification labels, and confusingly similar identifiers are reserved by their respective owner.
+This policy explains how the project names and marks may be used.
 
-The public content license and code license in this repository do not grant permission to use these marks as:
+## Marks
 
-- Product names
-- Service names
-- Company names
-- Certification marks
-- Marketplace labels
-- Domain names that imply official status
-- Confusingly similar commercial brands
+The following names, marks, logos, badges, service names, and related branding
+are reserved by their respective owner:
 
-You may use the names in ordinary descriptive or nominative ways, such as:
+- psi.run
+- Schema Sandbox
+- SIP-Core
+- Schema Interoperability Protocol
+- Agent IP
+- SchemaBox
+- Capability Registry
+- any official compatibility, certification, or marketplace badges
 
-- "Based on the Schema Sandbox methodology"
-- "Compatible with the public SIP-Core draft"
-- "An independent implementation inspired by Schema Sandbox"
+Some marks may be unregistered. This policy still applies to prevent confusion
+about source, sponsorship, endorsement, or certification.
 
-You may not imply that your product, service, certification, or commercial offering is official, endorsed, certified, or operated by the original authors unless you have separate written permission.
+## Permitted nominative use
+
+You may use the names above to truthfully describe compatibility or reference the
+project, for example:
+
+- "implements SIP-Core v0.1"
+- "uses the Schema Sandbox manifest format"
+- "compatible with the public SIP-Core specification"
+
+## Prohibited use without written permission
+
+You may not:
+
+- use the marks as the name of your product, company, hosted service, or package;
+- imply that your product is official, certified, endorsed, or operated by
+  psi.run;
+- use confusingly similar names, logos, or badges;
+- register domains, social accounts, packages, or trademarks that imply official
+  control of psi.run, Schema Sandbox, SIP-Core, or Agent IP;
+- use "official", "certified", "verified", "psi.run-approved", or similar
+  claims unless there is a written certification or commercial agreement.
+
+## Compatibility wording
+
+Allowed:
+
+> This package implements SIP-Core v0.1.
+
+Not allowed without written permission:
+
+> Official SIP-Core Certified package.
+
+Allowed:
+
+> This adapter is designed for compatibility with the public SIP-Core
+> specification.
+
+Not allowed without written permission:
+
+> psi.run Official Adapter.
+
+## No trademark license through open-source licenses
+
+The CC BY 4.0 and Apache-2.0 licenses used in this repository do not grant
+trademark rights.

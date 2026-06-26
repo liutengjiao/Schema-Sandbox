@@ -1,24 +1,54 @@
-# License for Code, JSON Schemas, and Implementation Snippets
+# Code, Schema, and Reference Implementation License
 
-Example code, JSON schema files, manifest examples, payload examples, and implementation snippets in this repository are licensed under the **Apache License 2.0** unless otherwise stated.
+Unless otherwise noted, all source code, JSON Schemas, SDKs, validators, CLI
+utilities, adapters, tests, executable examples, and sample manifests intended
+for software implementation in this repository are licensed under the:
+
+**Apache License, Version 2.0**
 
 SPDX-License-Identifier: Apache-2.0
 
+Full license text:
+https://www.apache.org/licenses/LICENSE-2.0
+
+Copyright (c) 2026 Tengjiao Liu / psi.run contributors.
+
 ## Scope
 
-This license applies to:
+This license applies to materials such as:
 
-- JSON Schema files in `schemas/`
-- Manifest examples in `examples/`
-- API payload examples
-- Code snippets and implementation sketches
+- `/schemas/**`
+- `/src/**`
+- `/packages/**`
+- `/examples/**`
+- `/tests/**`
+- executable sample manifests;
+- reference validators and adapters;
+- SDK and CLI code.
 
-## Trademark limitation
+## Recommended source header
 
-The Apache License 2.0 does not grant permission to use the trade names, trademarks, service marks, or product names of the licensor, except as required for reasonable and customary attribution.
+```text
+// SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Tengjiao Liu / psi.run contributors.
+```
 
-Schema Sandbox, SchemaSandbox, SIP, and related marks are not licensed as product names, service names, certification marks, or confusingly similar commercial marks without separate permission.
+For JSON files:
 
-## No warranty
+```json
+{
+  "$comment": "SPDX-License-Identifier: Apache-2.0"
+}
+```
 
-All examples are provided as reference material only. They are not production security guarantees.
+## No hosted service rights
+
+This license permits use of the covered code under Apache-2.0. It does not grant
+access to, or rights in, the psi.run hosted runtime, Agent IP platform,
+Capability Registry, commercial marketplace, private Sandbox Packs, or hosted
+APIs. See `COMMERCIAL_TERMS.md`.
+
+## No trademark grant
+
+This license does not grant permission to use project names, marks, logos,
+certification badges, or endorsement claims. See `TRADEMARK.md`.

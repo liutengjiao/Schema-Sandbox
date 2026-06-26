@@ -1,12 +1,14 @@
-Schema Sandbox Public Methodology
-Copyright (c) 2026 Tengjiao Liu and Hongzong Si
+Schema Sandbox / SIP-Core
 
-Suggested attribution:
+Copyright (c) 2026 Tengjiao Liu / psi.run contributors.
 
-"Based on the Schema Sandbox methodology by Tengjiao Liu and Hongzong Si."
+This repository contains materials under multiple licenses:
 
-Canonical source:
-https://github.com/liutengjiao/Schema-Sandbox
-https://SchemaSandbox.com
+- Specification and documentation materials: CC BY 4.0.
+- Source code, JSON Schemas, validators, SDKs, examples, and tests: Apache-2.0.
+- Trademarks, logos, hosted services, commercial registries, private Sandbox
+  Packs, and psi.run platform assets: all rights reserved unless separately
+  licensed.
 
-This repository contains public methodology content, draft specifications, and example schemas for contract-based AI agent execution.
+See LICENSE.md, LICENSE-SPEC.md, LICENSE-CODE.md, TRADEMARK.md, and
+COMMERCIAL_TERMS.md.
