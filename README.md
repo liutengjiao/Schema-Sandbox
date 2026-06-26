@@ -102,11 +102,14 @@ See [`examples/industrial-maintenance-workorder`](examples/industrial-maintenanc
 
 This repository uses a split licensing model.
 
-- **SIP-Core specification and documentation** are licensed under Creative Commons Attribution 4.0 International (**CC BY 4.0**). See [`LICENSE-SPEC.md`](LICENSE-SPEC.md).
-- **Source code, JSON Schemas, validators, SDKs, examples, and tests** are licensed under the **Apache License 2.0**. See [`LICENSE-CODE.md`](LICENSE-CODE.md).
-- **psi.run hosted runtime, Agent IP platform, Capability Registry, commercial marketplace, private Sandbox Packs, proprietary prompts, scoring systems, billing systems, hosted APIs, logos, brands, and certification marks** are not licensed under the public licenses unless separately stated. See [`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md), [`TRADEMARK.md`](TRADEMARK.md), and [`CONFORMANCE.md`](CONFORMANCE.md).
+- **SIP-Core specification, documentation, methodology text, and explanatory materials** are licensed under Creative Commons Attribution 4.0 International (**CC BY 4.0**) unless otherwise stated. See [`LICENSE-SPEC.md`](LICENSE-SPEC.md).
+- **Source code, JSON Schemas, validators, SDKs, executable examples, tests, and sample manifests** are licensed under the **Apache License 2.0** unless otherwise stated. See [`LICENSE-CODE.md`](LICENSE-CODE.md).
+- **psi.run hosted runtime, Agent IP platform, Capability Registry, marketplace, commercial Sandbox Packs, private prompts, scoring systems, billing systems, hosted APIs, logos, brands, certification marks, and proprietary governance policies** are not licensed under the public licenses unless separately agreed in writing. See [`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md), [`TRADEMARK.md`](TRADEMARK.md), and [`CONFORMANCE.md`](CONFORMANCE.md).
 
-SIP-Core is published as the public minimal contract for mounting Schema Sandbox capabilities into Agent IPs. The public license permits inspection, implementation, and compatible tooling. It does not grant rights to use the psi.run hosted platform or claim official certification, endorsement, or marketplace listing.
+SIP-Core is published as the public minimal contract for mounting Schema Sandbox capabilities into Agent IPs. The public license permits inspection, implementation, and compatible tooling. It does not grant rights to use the psi.run hosted platform or claim official certification, endorsement, marketplace listing, or psi.run approval.
+
+See [`LICENSE.md`](LICENSE.md), [`LICENSE-SPEC.md`](LICENSE-SPEC.md), [`LICENSE-CODE.md`](LICENSE-CODE.md), [`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md), [`TRADEMARK.md`](TRADEMARK.md), and [`CONFORMANCE.md`](CONFORMANCE.md).
+
 
 ## Suggested Attribution
 

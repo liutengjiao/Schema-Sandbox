@@ -102,11 +102,14 @@ Schema Sandbox 可能会拦截并返回：
 
 本仓库采用分层开源许可与商业保留模式。
 
-- **SIP-Core 规范与文档** 采用 Creative Commons Attribution 4.0 International (**CC BY 4.0**) 许可。参见 [`LICENSE-SPEC.md`](LICENSE-SPEC.md)。
-- **源代码、JSON Schema、验证器、SDK、示例和测试代码** 采用 **Apache License 2.0** 许可。参见 [`LICENSE-CODE.md`](LICENSE-CODE.md)。
-- **psi.run 托管运行时、Agent IP 平台与身份运行时、能力注册表（Registry）、商业市场、私有沙箱包（Sandbox Packs）、专有 Prompt 链、评分系统、计费系统、托管 API、商标、标识和认证标签** 均不属于公开许可范围，除非另行书面声明。参见 [`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md)、[`TRADEMARK.md`](TRADEMARK.md) 和 [`CONFORMANCE.md`](CONFORMANCE.md)。
+- **SIP-Core 规范、文档、方法论文本和解释性材料** 采用 Creative Commons Attribution 4.0 International (**CC BY 4.0**) 许可，除非另有声明。参见 [`LICENSE-SPEC.md`](LICENSE-SPEC.md)。
+- **源代码、JSON Schema、验证器、SDK、可执行示例、测试和示例 Manifest** 采用 **Apache License 2.0** 许可，除非另有声明。参见 [`LICENSE-CODE.md`](LICENSE-CODE.md)。
+- **psi.run 托管运行时、Agent IP 平台、能力注册表、商业市场、商业 Sandbox Packs、私有 Prompt、评分系统、计费系统、托管 API、商标、品牌、认证标志和专有治理策略** 均不属于公开许可范围，除非另行书面同意。参见 [`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md)、[`TRADEMARK.md`](TRADEMARK.md) 和 [`CONFORMANCE.md`](CONFORMANCE.md)。
 
-SIP-Core 作为将 Schema Sandbox 能力挂载到 Agent IP 上的公共极简接口合约发布。公开许可证允许开发者进行审查、独立实现和开发兼容工具，但不授予使用 psi.run 托管平台或声称获得官方认证、背书或商业市场上架的权利。
+SIP-Core 作为将 Schema Sandbox 能力挂载到 Agent IP 上的公共极简接口合约发布。公开许可证允许开发者进行审查、独立实现和开发兼容工具，但不授予使用 psi.run 托管平台或声称获得官方认证、背书、商业市场上架或 psi.run 批准的权利。
+
+参见 [`LICENSE.md`](LICENSE.md)、[`LICENSE-SPEC.md`](LICENSE-SPEC.md)、[`LICENSE-CODE.md`](LICENSE-CODE.md)、[`COMMERCIAL_TERMS.md`](COMMERCIAL_TERMS.md)、[`TRADEMARK.md`](TRADEMARK.md) 和 [`CONFORMANCE.md`](CONFORMANCE.md)。
+
 
 ## 推荐署名方式
 
