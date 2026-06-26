@@ -1,0 +1,12 @@
+{
+  "agent_id": "example_agent",
+  "sandbox_id": "geo_audit_reference",
+  "trace_id": "tr_example_001",
+  "action": {
+    "tool": "Crawler.scrape",
+    "args": {
+      "example_id": "EX-001",
+      "priority": "normal"
+    }
+  }
+}

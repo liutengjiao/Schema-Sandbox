@@ -1,0 +1,53 @@
+{
+  "sip_version": "0.1.0",
+  "sandbox_id": "erp_mes_permission_gateway",
+  "name": "ERP / MES Permission Gateway",
+  "version": "0.1.0",
+  "capability_type": "industrial.permission.gateway",
+  "metadata": {
+    "author": "Schema Sandbox Public Methodology",
+    "license": "Apache-2.0",
+    "description": "Reference manifest for ERP / MES Permission Gateway"
+  },
+  "input_contract": {
+    "schema_ref": "./schemas/input.schema.json",
+    "sanitize_input": true
+  },
+  "output_contract": {
+    "schema_ref": "./schemas/output.schema.json",
+    "forbidden_patterns": [
+      "raw payroll",
+      "personal identifier"
+    ],
+    "entropy_threshold": 5.0
+  },
+  "permission_scope": {
+    "fs_scope": [
+      "./workspace/reports"
+    ],
+    "net_scope": [
+      "mes.example.com:443",
+      "erp.example.com:443"
+    ],
+    "tool_scope": [
+      "MES.readStatus",
+      "ERP.readInventorySummary"
+    ],
+    "ttl_seconds": 900,
+    "human_approval": true,
+    "deny_by_default": true
+  },
+  "validation": {
+    "required_evidence": [
+      "input_hash",
+      "tool_args_hash",
+      "policy_decision",
+      "output_hash"
+    ]
+  },
+  "error_codes": {
+    "SIP_ERR_INPUT_VIOLATION": "0x03",
+    "SIP_ERR_SCOPE_LOCKED": "0x04",
+    "SIP_ERR_OUTPUT_VIOLATION": "0x06"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SIPCoreManifest",
+  "type": "object",
+  "required": [
+    "sip_version",
+    "sandbox_id",
+    "name",
+    "version",
+    "capability_type",
+    "metadata",
+    "input_contract",
+    "output_contract",
+    "permission_scope",
+    "error_codes"
+  ],
+  "properties": {
+    "sip_version": {
+      "type": "string"
+    },
+    "sandbox_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_.-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "capability_type": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "author",
+        "license",
+        "description"
+      ],
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "input_contract": {
+      "type": "object",
+      "required": [
+        "schema_ref"
+      ],
+      "properties": {
+        "schema_ref": {
+          "type": "string"
+        },
+        "sanitize_input": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "output_contract": {
+      "type": "object",
+      "required": [
+        "schema_ref"
+      ],
+      "properties": {
+        "schema_ref": {
+          "type": "string"
+        },
+        "forbidden_patterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "entropy_threshold": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": true
+    },
+    "permission_scope": {
+      "type": "object",
+      "required": [
+        "fs_scope",
+        "net_scope",
+        "tool_scope"
+      ],
+      "properties": {
+        "fs_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "net_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tool_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ttl_seconds": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "human_approval": {
+          "type": "boolean"
+        },
+        "deny_by_default": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "workspace_partitions": {
+      "type": "array"
+    },
+    "validation": {
+      "type": "object"
+    },
+    "error_codes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

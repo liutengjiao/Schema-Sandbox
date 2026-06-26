@@ -1,0 +1,20 @@
+{
+  "decision": "deny",
+  "rejection": {
+    "violation_type": "OUT_OF_BOUNDS_WRITE",
+    "allowed_boundaries": {
+      "tool_scope": [
+        "Crawler.scrape",
+        "LinkChecker.check",
+        "Report.writeDraft"
+      ],
+      "net_scope": [
+        "*.target.example:443"
+      ]
+    },
+    "suggested_fallback": {
+      "action": "AskHuman",
+      "description": "The proposed action exceeds the public reference permission scope."
+    }
+  }
+}

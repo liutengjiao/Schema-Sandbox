@@ -1,0 +1,12 @@
+{
+  "agent_id": "example_agent",
+  "sandbox_id": "erp_mes_permission_gateway",
+  "trace_id": "tr_example_001",
+  "action": {
+    "tool": "MES.readStatus",
+    "args": {
+      "example_id": "EX-001",
+      "priority": "normal"
+    }
+  }
+}

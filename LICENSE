@@ -1,0 +1,16 @@
+Repository License Summary
+==========================
+
+This repository uses a split license model:
+
+1. Methodology text, diagrams, documentation, and public specification drafts are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). See LICENSE-CONTENT.md.
+
+2. Example code, JSON schemas, and implementation snippets are licensed under Apache License 2.0 unless otherwise stated. See LICENSE-CODE.md.
+
+3. Names, marks, logos, certification labels, and confusingly similar commercial identifiers are not granted by either license. See TRADEMARK.md.
+
+Suggested attribution:
+
+"Based on the Schema Sandbox methodology by Tengjiao Liu and Hongzong Si."
+
+No warranty is provided. Production use requires independent review.

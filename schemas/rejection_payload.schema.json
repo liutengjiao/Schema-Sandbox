@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SchemaSandboxRejectionPayload",
+  "type": "object",
+  "required": [
+    "violation_type",
+    "allowed_boundaries",
+    "suggested_fallback"
+  ],
+  "properties": {
+    "violation_type": {
+      "type": "string",
+      "enum": [
+        "AUTHORIZATION_FAIL",
+        "OUT_OF_BOUNDS_READ",
+        "OUT_OF_BOUNDS_WRITE",
+        "SCHEMA_FORMAT_ERROR",
+        "OUTPUT_CONTRACT_ERROR",
+        "ENTROPY_VIOLATION",
+        "LEAK_DETECTED"
+      ]
+    },
+    "allowed_boundaries": {
+      "type": "object",
+      "properties": {
+        "fs_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "net_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tool_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "valid_schema_ref": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "suggested_fallback": {
+      "type": "object",
+      "required": [
+        "action",
+        "description"
+      ],
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "AskHuman",
+            "DegradeToPlainText",
+            "UseFallbackSchema",
+            "RetryWithCompaction",
+            "CreateDraftOnly",
+            "Abort"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

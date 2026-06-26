@@ -1,0 +1,10 @@
+flowchart LR
+    U[Operator / Business Workflow] --> A[AI Agent]
+    A --> S[Schema Sandbox Runtime API]
+    S -->|allow / ask / deny| G{Policy Decision}
+    G -->|allow| I[MES / ERP / QMS / CMMS]
+    G -->|ask| H[Human Approval]
+    G -->|deny| R[Structured Rejection Payload]
+    I --> O[Validated Output]
+    H --> I
+    S --> E[EvidenceRecord]

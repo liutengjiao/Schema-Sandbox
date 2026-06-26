@@ -1,0 +1,53 @@
+{
+  "sip_version": "0.1.0",
+  "sandbox_id": "quality_inspection_report_contract",
+  "name": "Quality Inspection Report Contract",
+  "version": "0.1.0",
+  "capability_type": "industrial.quality.report",
+  "metadata": {
+    "author": "Schema Sandbox Public Methodology",
+    "license": "Apache-2.0",
+    "description": "Reference manifest for Quality Inspection Report Contract"
+  },
+  "input_contract": {
+    "schema_ref": "./schemas/input.schema.json",
+    "sanitize_input": true
+  },
+  "output_contract": {
+    "schema_ref": "./schemas/output.schema.json",
+    "forbidden_patterns": [
+      "guaranteed safe",
+      "100% compliant",
+      "defect-free"
+    ],
+    "entropy_threshold": 5.0
+  },
+  "permission_scope": {
+    "fs_scope": [
+      "./workspace/reports"
+    ],
+    "net_scope": [
+      "qms.example.com:443"
+    ],
+    "tool_scope": [
+      "QMS.createDraftReport",
+      "QMS.attachEvidence"
+    ],
+    "ttl_seconds": 900,
+    "human_approval": true,
+    "deny_by_default": true
+  },
+  "validation": {
+    "required_evidence": [
+      "input_hash",
+      "tool_args_hash",
+      "policy_decision",
+      "output_hash"
+    ]
+  },
+  "error_codes": {
+    "SIP_ERR_INPUT_VIOLATION": "0x03",
+    "SIP_ERR_SCOPE_LOCKED": "0x04",
+    "SIP_ERR_OUTPUT_VIOLATION": "0x06"
+  }
+}

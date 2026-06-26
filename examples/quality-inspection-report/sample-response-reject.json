@@ -1,0 +1,19 @@
+{
+  "decision": "deny",
+  "rejection": {
+    "violation_type": "OUT_OF_BOUNDS_WRITE",
+    "allowed_boundaries": {
+      "tool_scope": [
+        "QMS.createDraftReport",
+        "QMS.attachEvidence"
+      ],
+      "net_scope": [
+        "qms.example.com:443"
+      ]
+    },
+    "suggested_fallback": {
+      "action": "AskHuman",
+      "description": "The proposed action exceeds the public reference permission scope."
+    }
+  }
+}

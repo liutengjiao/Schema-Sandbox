@@ -1,0 +1,12 @@
+{
+  "agent_id": "example_agent",
+  "sandbox_id": "quality_inspection_report_contract",
+  "trace_id": "tr_example_001",
+  "action": {
+    "tool": "QMS.createDraftReport",
+    "args": {
+      "example_id": "EX-001",
+      "priority": "normal"
+    }
+  }
+}

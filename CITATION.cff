@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use, adapt, teach, implement, or commercially apply this methodology, please cite this repository."
+title: "Schema Sandbox: Public Methodology and Interoperability Contract for Safe AI Agent Execution"
+version: "0.1.0-public-methodology"
+date-released: "2026-06-26"
+type: "software"
+url: "https://github.com/liutengjiao/Schema-Sandbox"
+authors:
+  - family-names: "Liu"
+    given-names: "Tengjiao"
+  - family-names: "Si"
+    given-names: "Hongzong"
+preferred-citation:
+  type: article
+  title: "Schema Sandbox: A Nine-Layer Architecture and Interoperability Contract for Constrained Agent Execution"
+  authors:
+    - family-names: "Liu"
+      given-names: "Tengjiao"
+    - family-names: "Si"
+      given-names: "Hongzong"
+  year: 2026
+  url: "https://github.com/liutengjiao/Schema-Sandbox"
