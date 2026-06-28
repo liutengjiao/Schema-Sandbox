@@ -81,6 +81,9 @@ L'ₖ[i] = Lₖ[i] （若 i ∈ V(valid)） 或 -∞ （若 i ∉ V(valid)）
 ### 2.6 工业级智能体装配架剖析 (Industry Implementations Analysis)
 2026 年初，多款商用智能体工具展现了“装配架（Harness）”在智能体系统中的核心地位。对 **Claude Code** 的架构解剖（基于 ~51 万行 TypeScript 源码分析 [8]）表明，其核心 ReAct 逻辑仅占系统代码的 2% 以下，其余 98% 均为由 3 层存储管理（ephemeral、memory.md 索引、CLAUDE.md 宪法）、5 层渐进式上下文压实、8层安全防御深度链和动态 Hook 机制构成的复杂智能体装配架。类似地，**Cursor** 引入了文件级 Merkle 树增量检测、AST 语义分块和智能规则激活机制；而 **Aider** 则通过 Git 原生提交机制和高密度的代码库地图（Repo Map）实现了极高的 Token 效率（单任务开销仅为 Claude Code 的 1/4 左右）。这些工业实践证明，智能体的落地壁垒已不在模型底座，而在其外裹的活性约束与装配架基础设施。
 
+### 2.7 结构化安全技能与知识过滤架构 (Structured Security Skills)
+最近，先进智能体装配架的工程演进进一步证明了模块化和上下文过滤架构的必要性。例如，Mukul 等人的 **Anthropic-Cybersecurity-Skills** [18]（基于 `agentskills.io` 标准实现了 817 个结构化网络安全技能）表明，在智能体的上下文窗口中塞入大而全的单体规则书或海量领域知识，会严重退化智能体的推理效率并导致上下文爆炸。相反，该项目将复杂的安全领域（如 MITRE ATT&CK 和 NIST 框架下的威胁分析）拆分为细粒度、自包含的 Skill 文件夹，每个文件夹包含 YAML 元数据声明和 Markdown 任务指南。在运行时根据具体任务**按需动态加载**特定技能，实现了一种局部形式的皮亚杰同化机制，并将智能体的执行参数锁定在极窄的安全边界内。这种模式直接映射了图式沙箱架构中的领域语料库（L1）、知识选择器（L5）和工具/API文法（L7）层，为九层神经符号约束架构提供了强有力的工业落地验证。
+
 ---
 
 ## 3. 图式沙箱的形式化定义与自进化循环
@@ -769,6 +772,7 @@ SIP 协议的核心体现为 `manifest.json` 能力清单，任何支持 SIP 的
 [15] Ming Li, et al. "CAM: Constructivist Schema Clustering for Long-Horizon Agent Memory." *NeurIPS*, 2025.  
 [16] Immanuel Kant. *Kritik der reinen Vernunft* (Critique of Pure Reason). Riga, 1781.  
 [17] Jean Piaget. *The Origins of Intelligence in Children*. International Universities Press, 1952.  
+[18] Mukul et al. "Anthropic-Cybersecurity-Skills: A Gated Context Library of Cybersecurity Skills." *GitHub Repository*, 2026. URL: https://github.com/mukul975/Anthropic-Cybersecurity-Skills  
 
 ---
 

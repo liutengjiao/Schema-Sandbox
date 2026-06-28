@@ -81,6 +81,9 @@ Recent research is moving away from passive memory retrieval towards constructiv
 ### 2.6 Industrial Agent Harness Analysis
 In early 2026, commercial developer tools highlighted the critical role of "harnesses" surrounding raw LLMs. Source code analyses of **Claude Code** (dissecting ~513k lines of TypeScript codebase [8]) reveal that the core ReAct loop (`queryLoop()`) represents less than 2% of the system; the remaining 98% is the execution harness, featuring a 3-layer memory architecture (ephemeral context, `memory.md` pointer index, and `CLAUDE.md` constitution), a 5-layer progressive compaction pipeline, an 8-layer defense-in-depth safety chain, and dynamic Hook systems. Similarly, **Cursor** leverages Merkle tree workspace tracking, AST semantic chunking, and MDC intelligent rules; while **Aider** utilizes git-native commits and repository maps (Repo Map) to achieve a 4x token efficiency gain over Claude Code. These practices demonstrate that the core challenge of engineering agents has shifted from base models to the surrounding runtime harness.
 
+## 2.7 Structured Security Skills and Gated Context Architectures
+Recent engineering patterns for advanced agent harnesses further validate the necessity of modular, context-gated architectures. For instance, Mukul et al.'s **Anthropic-Cybersecurity-Skills** [18] (implementing 817 structured cybersecurity skills based on the `agentskills.io` standard) demonstrates that stuffing an agent's context window with large, monolithic rulebooks or extensive domain knowledge degrades reasoning and leads to context window explosion. Instead, the project structures complex domains (such as cybersecurity threat analysis under MITRE ATT&CK and NIST guidelines) into modular, self-contained files featuring YAML frontmatter metadata and markdown task blueprints. By performing *on-demand dynamic loading* of specific skills based on the active task context, the runtime implements a localized form of Piagetian assimilation (matching inputs to narrow capability scopes) and bounds the agent's execution parameters. This pattern directly maps to the Domain Corpus (L1), Knowledge Selector (L5), and Tool/API Grammar (L7) layers of the Schema Sandbox, serving as a real-world industrial validation of the nine-layer neuro-symbolic constraint architecture.
+
 ---
 
 ## 3. Formal Definition and Self-Evolutionary Loop
@@ -788,6 +791,7 @@ Together, the "3-layer memory, 5-layer compaction, 8-layer defense" engineering 
 [15] Ming Li, et al. "CAM: Constructivist Schema Clustering for Long-Horizon Agent Memory." *NeurIPS*, 2025.  
 [16] Immanuel Kant. *Kritik der reinen Vernunft* (Critique of Pure Reason). Riga, 1781.  
 [17] Jean Piaget. *The Origins of Intelligence in Children*. International Universities Press, 1952.  
+[18] Mukul et al. "Anthropic-Cybersecurity-Skills: A Gated Context Library of Cybersecurity Skills." *GitHub Repository*, 2026. URL: https://github.com/mukul975/Anthropic-Cybersecurity-Skills  
 
 ---
 
